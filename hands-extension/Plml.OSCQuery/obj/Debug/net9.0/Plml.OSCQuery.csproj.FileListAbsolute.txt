@@ -1,0 +1,12 @@
+D:\Repositories\chataigne-misc\hands-extension\Plml.OSCQuery\bin\Debug\net9.0\Plml.OSCQuery.deps.json
+D:\Repositories\chataigne-misc\hands-extension\Plml.OSCQuery\bin\Debug\net9.0\Plml.OSCQuery.dll
+D:\Repositories\chataigne-misc\hands-extension\Plml.OSCQuery\bin\Debug\net9.0\Plml.OSCQuery.pdb
+D:\Repositories\chataigne-misc\hands-extension\Plml.OSCQuery\obj\Debug\net9.0\Plml.OSCQuery.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositories\chataigne-misc\hands-extension\Plml.OSCQuery\obj\Debug\net9.0\Plml.OSCQuery.AssemblyInfoInputs.cache
+D:\Repositories\chataigne-misc\hands-extension\Plml.OSCQuery\obj\Debug\net9.0\Plml.OSCQuery.AssemblyInfo.cs
+D:\Repositories\chataigne-misc\hands-extension\Plml.OSCQuery\obj\Debug\net9.0\Plml.OSCQuery.csproj.CoreCompileInputs.cache
+D:\Repositories\chataigne-misc\hands-extension\Plml.OSCQuery\obj\Debug\net9.0\Plml.OSCQuery.dll
+D:\Repositories\chataigne-misc\hands-extension\Plml.OSCQuery\obj\Debug\net9.0\refint\Plml.OSCQuery.dll
+D:\Repositories\chataigne-misc\hands-extension\Plml.OSCQuery\obj\Debug\net9.0\Plml.OSCQuery.pdb
+D:\Repositories\chataigne-misc\hands-extension\Plml.OSCQuery\obj\Debug\net9.0\ref\Plml.OSCQuery.dll
+D:\Repositories\chataigne-misc\hands-extension\Plml.OSCQuery\obj\Debug\net9.0\Plml.OSCQuery.csproj.AssemblyReference.cache

@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Plml.OSCQuery/1.0.0": {
+        "dependencies": {
+          "Vizcon.OSC": "1.0.3"
+        },
+        "runtime": {
+          "Plml.OSCQuery.dll": {}
+        }
+      },
+      "Vizcon.OSC/1.0.3": {
+        "runtime": {
+          "lib/net8.0/Vizcon.OSC.dll": {
+            "assemblyVersion": "1.0.3.0",
+            "fileVersion": "1.0.3.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Plml.OSCQuery/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Vizcon.OSC/1.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xyDjpvNWvyzWYSPIgWK7qHbTQVJiusLSLPWrGJ90YCI5fD9AmxhfHfmSgvRn6Zvl7L5OdysIuKt2iYf7hEWFyw==",
+      "path": "vizcon.osc/1.0.3",
+      "hashPath": "vizcon.osc.1.0.3.nupkg.sha512"
+    }
+  }
+}
