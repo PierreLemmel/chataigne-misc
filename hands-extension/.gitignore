@@ -1,0 +1,127 @@
+# Visual Studio and .NET artifacts
+##################################
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+build/
+Build/
+[Tt]emp/
+[Tt]mp/
+
+.vs
+
+# Visual Studio specific files
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.obj
+*.lib
+*.ncb
+*.opendb
+*.aps
+*.bsc
+*.sbr
+*.res
+*.pch
+*.pdb
+*.pgm
+*.resources
+*.sdf
+*.tlog
+*.vc.db
+*.vc.pdb
+*.vsp
+*.vsn
+*.wixpdb
+*_i.c
+*_p.c
+*.ilk
+*.aps
+*.ipch
+*.com
+*.tlh
+*.tli
+*.class
+*.dll
+*.exe
+*.manifest
+*.map
+*.bak
+*.trc
+*.idb
+*.opt
+*.scc
+*.vsdir
+*.vsd
+*.vss
+*.vsx
+*.vtx
+*.wdproj
+*.wrf
+*.wmdb
+*.webinfo
+
+# Resharper files
+_ReSharper.*/
+*.resharper
+*.resharper.user
+*.resharper.host
+*.resharper.eap
+
+# VS Code specific files
+.vscode/
+
+# NuGet package restore
+*.nupkg
+*.nuget.props
+*.nuget.targets
+packages/
+
+# Rider files
+.idea/
+
+# Dotnet tool local tools
+.config/dotnet-tools.json
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Azure KeyVault files
+*.pfx
+
+# Miscellaneous
+Thumbs.db
+Desktop.ini
+
+# Global packages folder (if not using local packages)
+# %USERPROFILE%\.nuget\packages/
+
+# Recommended: Exclude editor specific files if you use different editors
+# *~
+# #*
+# .*~
+# .#*
+# *.bak
+# *.swp
+# *.swo
+# *.tmp
+# *.orig
+
+# You can add more specific exclusions here if needed for your project.
+# For example, if you have a "Generated" folder that you don't want to track:
+# Generated/

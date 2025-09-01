@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\Plml.OSCQuery.csproj": {}
+    "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\Plml.OSCQuery.csproj": {}
   },
   "projects": {
-    "D:\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\Plml.OSCQuery.csproj": {
+    "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\Plml.OSCQuery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\Plml.OSCQuery.csproj",
+        "projectUniqueName": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\Plml.OSCQuery.csproj",
         "projectName": "Plml.OSCQuery",
-        "projectPath": "D:\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\Plml.OSCQuery.csproj",
+        "projectPath": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\Plml.OSCQuery.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\obj\\",
+        "outputPath": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

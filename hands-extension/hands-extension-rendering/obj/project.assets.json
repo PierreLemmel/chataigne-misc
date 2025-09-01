@@ -2625,11 +2625,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repositories\\chataigne-misc\\hands-extension\\hands-extension-rendering\\HandsExtensionRendering.csproj",
+      "projectUniqueName": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\hands-extension-rendering\\HandsExtensionRendering.csproj",
       "projectName": "HandsExtensionRendering",
-      "projectPath": "D:\\Repositories\\chataigne-misc\\hands-extension\\hands-extension-rendering\\HandsExtensionRendering.csproj",
+      "projectPath": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\hands-extension-rendering\\HandsExtensionRendering.csproj",
       "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "D:\\Repositories\\chataigne-misc\\hands-extension\\hands-extension-rendering\\obj\\",
+      "outputPath": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\hands-extension-rendering\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2650,8 +2650,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\Plml.OSCQuery.csproj": {
-              "projectPath": "D:\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\Plml.OSCQuery.csproj"
+            "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\Plml.OSCQuery.csproj": {
+              "projectPath": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\Plml.OSCQuery.csproj"
             }
           }
         }
@@ -2666,7 +2666,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -2693,7 +2693,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

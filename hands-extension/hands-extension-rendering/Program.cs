@@ -3,6 +3,8 @@ using OpenTK.Mathematics;
 using OpenTK.Windowing.Common;
 using OpenTK.Windowing.Desktop;
 using Plml.OSCQuery;
+using OpenTK.Windowing.GraphicsLibraryFramework;
+using Vizcon.OSC;
 
 
 void RenderMainWindow()
@@ -25,35 +27,44 @@ void RenderMainWindow()
 }
 
 
-
-
-
 using (OSCQueryServer server = new("Test", 45321, 9050))
 {
-    OSCQueryNode newNode = new()
-    {
-        FullPath = "/pipi/caca/prout",
-        Type = OSCQueryTypes.Tags.Integer,
-        Value = [
-            8
-        ],
-        Description = "Prout prout"
-    };
+    OSCQueryNode intNode = OSCQueryNodes.CreateIntNode("/test/int", "Integer Node", 14, -666, 123823);
+    OSCQueryNode floatNode = OSCQueryNodes.CreateFloatNode("/test/float", "Float Node", 3.14f, -1f, 1f);
+    OSCQueryNode stringNode = OSCQueryNodes.CreateStringNode("/test/string", "String Node", "Hello, OSCQuery!", [
+        "Hello, OSCQuery!",
+        "Option 2",
+        "Option 3"
+    ]);
 
-    OSCQueryNode fesses = new()
-    {
-        FullPath = "/pipi/caca/fesses",
-        Type = OSCQueryTypes.Tags.String,
-        Value = [
-            "Juliette Baron elle dit que c'est pas une meuf à cul, mais c'est trop une meuf à cul"
-        ],
-        Description = "Oui oui miam le cul"
-    };
 
-    server.AddNode(newNode);
-    server.AddNode(fesses);
+
+    OSCQueryNode booleanNode = OSCQueryNodes.CreateBooleanNode("/test/boolean", "Boolean Node", true);
+
+    OSCQueryNode colorNode = OSCQueryNodes.CreateColorNode("/test2/color", "Color Node", new RGBA(0xff, 0x88, 0x00, 0xff));
+
+    server.AddNode(intNode);
+    server.AddNode(floatNode);
+    server.AddNode(stringNode);
+    server.AddNode(booleanNode);
+    server.AddNode(colorNode);
 
     _ = Task.Run(() => server.StartAsync());
+
+
+    _ = Task.Run(async () =>
+    {
+        float t = 0f;
+        while (true)
+        {
+            await Task.Delay(50);
+
+            t += 0.05f;
+
+            float val = MathF.Sin(t);
+            server.SetNodeValue("/test/float", val);
+        }
+    });
 
     RenderMainWindow();
 }

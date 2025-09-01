@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AJMkDlsrRGU=",
+  "dgSpecHash": "7YEi/6HqOuU=",
   "success": true,
-  "projectFilePath": "D:\\Repositories\\chataigne-misc\\hands-extension\\hands-extension-rendering\\HandsExtensionRendering.csproj",
+  "projectFilePath": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\hands-extension-rendering\\HandsExtensionRendering.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell\\.nuget\\packages\\common.logging\\3.4.1\\common.logging.3.4.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\common.logging.core\\3.4.1\\common.logging.core.3.4.1.nupkg.sha512",
