@@ -251,10 +251,14 @@ public class OSCQueryServer : IDisposable
 
         void NotifyValueChanged<T>(T val)
         {
+            object[] valArray = [val];
+            node.OnValueChanged?.Invoke(valArray);
+
+
             if (!node.Listen || _activeWebSocket is null || _activeWebSocket.State != WebSocketState.Open)
                 return;
 
-            OscMessage oscMsg = new(node.FullPath, [val]);
+            OscMessage oscMsg = new(node.FullPath, valArray);
             oscMsg.GetBytes();
 
             _activeWebSocket?.SendAsync(new ArraySegment<byte>(oscMsg.GetBytes()), WebSocketMessageType.Binary, true, CancellationToken.None);

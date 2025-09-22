@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Plml.OSCQuery")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c487a7fa1c4ad867e9c6c54dd8e663b5366fadd1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07fcb81bf17c1328537935563be5b703f2c0e8d9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Plml.OSCQuery")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Plml.OSCQuery")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

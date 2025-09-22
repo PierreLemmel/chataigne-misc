@@ -29,19 +29,36 @@ void RenderMainWindow()
 
 using (OSCQueryServer server = new("Test", 45321, 9050))
 {
-    OSCQueryNode intNode = OSCQueryNodes.CreateIntNode("/test/int", "Integer Node", 14, -666, 123823);
-    OSCQueryNode floatNode = OSCQueryNodes.CreateFloatNode("/test/float", "Float Node", 3.14f, -1f, 1f);
-    OSCQueryNode stringNode = OSCQueryNodes.CreateStringNode("/test/string", "String Node", "Hello, OSCQuery!", [
-        "Hello, OSCQuery!",
-        "Option 2",
-        "Option 3"
-    ]);
+    OSCQueryNode intNode = OSCQueryNodes.CreateIntNode("/test/int", "Integer Node", 14,
+        onValueChanged: (newValue) => Console.WriteLine($"Integer node changed to: {newValue}"),
+        min: -666,
+        max: 123823
+    );
+
+    OSCQueryNode floatNode = OSCQueryNodes.CreateFloatNode("/test/float", "Float Node", 3.14f,
+        onValueChanged: (newValue) => Console.WriteLine($"Float node changed to: {newValue}"),
+        min: -1f,
+        max: 1f
+    );
+
+    OSCQueryNode stringNode = OSCQueryNodes.CreateStringNode("/test/string", "String Node", "Hello, OSCQuery!",
+        onValueChanged: (newValue) => Console.WriteLine($"String node changed to: {newValue}"),
+        enumValues: [
+            "Hello, OSCQuery!",
+            "Option 2",
+            "Option 3"
+        ]
+    );
 
 
 
-    OSCQueryNode booleanNode = OSCQueryNodes.CreateBooleanNode("/test/boolean", "Boolean Node", true);
+    OSCQueryNode booleanNode = OSCQueryNodes.CreateBooleanNode("/test/boolean", "Boolean Node", true, 
+        onValueChanged: (newValue) => Console.WriteLine($"Boolean node changed to: {newValue}")
+    );
 
-    OSCQueryNode colorNode = OSCQueryNodes.CreateColorNode("/test2/color", "Color Node", new RGBA(0xff, 0x88, 0x00, 0xff));
+    OSCQueryNode colorNode = OSCQueryNodes.CreateColorNode("/test2/color", "Color Node", new RGBA(0xff, 0x88, 0x00, 0xff),
+        onValueChanged: (newValue) => Console.WriteLine($"Color node changed to: {OSCQueryColor.RGBAToString(newValue)}")
+    );
 
     server.AddNode(intNode);
     server.AddNode(floatNode);
@@ -51,20 +68,6 @@ using (OSCQueryServer server = new("Test", 45321, 9050))
 
     _ = Task.Run(() => server.StartAsync());
 
-
-    _ = Task.Run(async () =>
-    {
-        float t = 0f;
-        while (true)
-        {
-            await Task.Delay(50);
-
-            t += 0.05f;
-
-            float val = MathF.Sin(t);
-            server.SetNodeValue("/test/float", val);
-        }
-    });
 
     RenderMainWindow();
 }

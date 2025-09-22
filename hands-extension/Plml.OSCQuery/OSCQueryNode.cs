@@ -5,67 +5,82 @@ namespace Plml.OSCQuery;
 
 public static class OSCQueryNodes
 {
-    public static OSCQueryNode CreateIntNode(string path, string name, int value, int? min = null, int? max = null)
+    public static OSCQueryNode CreateIntNode(string path, string name, int value, Action<int>? onValueChanged = null, int? min = null, int? max = null) => new OSCQueryNode
     {
-        return new OSCQueryNode
+        FullPath = path,
+        Name = name,
+        Type = OSCQueryTypes.Tags.Integer,
+        Value = [
+            MoreMaths.Clamp(value, min ?? int.MinValue, max ?? int.MaxValue)
+        ],
+        Range = (min is not null || max is not null) ? [new OSCRange { Min = min, Max = max }] : null,
+        OnValueChanged = onValueChanged is not null ? (object[] values) =>
         {
-            FullPath = path,
-            Name = name,
-            Type = OSCQueryTypes.Tags.Integer,
-            Value = [value],
-            Range = (min is not null || max is not null) ? [new OSCRange { Min = min, Max = max }] : null
-        };
-    }
+            if (values.Length > 0 && values[0] is int i)
+                onValueChanged.Invoke(i);
+        } : null
+    };
 
-    public static OSCQueryNode CreateFloatNode(string path, string name, float value, float? min = null, float? max = null)
+    public static OSCQueryNode CreateFloatNode(string path, string name, float value, Action<float>? onValueChanged = null, float? min = null, float? max = null) => new OSCQueryNode
     {
-        float clampedValue = MoreMaths.Clamp(value, min ?? float.MinValue, max ?? float.MaxValue);
-
-        return new OSCQueryNode
+        FullPath = path,
+        Name = name,
+        Type = OSCQueryTypes.Tags.Float,
+        Value = [
+            MoreMaths.Clamp(value, min ?? float.MinValue, max ?? float.MaxValue)
+        ],
+        Range = (min is not null || max is not null) ? [new OSCRange { Min = min, Max = max }] : null,
+        OnValueChanged = onValueChanged is not null ? (object[] values) =>
         {
-            FullPath = path,
-            Name = name,
-            Type = OSCQueryTypes.Tags.Float,
-            Value = [value],
-            Range = (min is not null || max is not null) ? [new OSCRange { Min = min, Max = max }] : null
-        };
-    }
+            if (values.Length > 0 && values[0] is float flt)
+                onValueChanged.Invoke(flt);
+        } : null
+    };
 
-    public static OSCQueryNode CreateStringNode(string path, string name, string value, string[]? enumValues = null)
+    public static OSCQueryNode CreateStringNode(string path, string name, string value, Action<string>? onValueChanged = null, string[]? enumValues = null) => new OSCQueryNode
     {
-        return new OSCQueryNode
+        FullPath = path,
+        Name = name,
+        Type = OSCQueryTypes.Tags.String,
+        Value = [value],
+        Range = enumValues != null ? [new OSCRange { Values = enumValues }] : null,
+        OnValueChanged = onValueChanged is not null ? (object[] values) =>
         {
-            FullPath = path,
-            Name = name,
-            Type = OSCQueryTypes.Tags.String,
-            Value = [value],
-            Range = enumValues != null ? [new OSCRange { Values = enumValues }] : null
-        };
-    }
+            if (values.Length > 0 && values[0] is string str)
+                onValueChanged.Invoke(str);
+        } : null
+    };
 
-    public static OSCQueryNode CreateBooleanNode(string path, string name, bool value)
+    public static OSCQueryNode CreateBooleanNode(string path, string name, bool value, Action<bool>? onValueChanged = null) => new OSCQueryNode
     {
-        return new OSCQueryNode
+        FullPath = path,
+        Name = name,
+        Type = OSCQueryTypes.Tags.Boolean,
+        Value = [value],
+        OnValueChanged = onValueChanged is not null ? (object[] values) =>
         {
-            FullPath = path,
-            Name = name,
-            Type = OSCQueryTypes.Tags.Boolean,
-            Value = [value]
-        };
-    }
+            if (values.Length > 0 && values[0] is bool b)
+                onValueChanged.Invoke(b);
+        } : null
+    };
 
-    public static OSCQueryNode CreateColorNode(string path, string name, RGBA value)
+    public static OSCQueryNode CreateColorNode(string path, string name, RGBA value, Action<RGBA>? onValueChanged = null) => new OSCQueryNode
     {
-        return new OSCQueryNode
+        FullPath = path,
+        Name = name,
+        Type = OSCQueryTypes.Tags.Color,
+        Value = [
+            OSCQueryColor.RGBAToString(value)
+        ],
+        OnValueChanged = onValueChanged is not null ? (object[] values) =>
         {
-            FullPath = path,
-            Name = name,
-            Type = OSCQueryTypes.Tags.Color,
-            Value = [
-                OSCQueryColor.RGBAToString(value)
-            ]
-        };
-    }
+            if (values.Length > 0 && values[0] is string str)
+            {
+                RGBA col = OSCQueryColor.StringToRGBA(str);
+                onValueChanged.Invoke(col);
+            }
+        } : null
+    };
 }
 
 public class OSCQueryNode
@@ -93,6 +108,9 @@ public class OSCQueryNode
 
     [JsonIgnore]
     public bool Listen { get; set; } = false;
+
+    [JsonIgnore]
+    public Action<object[]>? OnValueChanged { get; set; }
 }
 
 public class OSCQueryHostInfo

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandsExtensionRendering", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plml.OSCQuery", "..\Plml.OSCQuery\Plml.OSCQuery.csproj", "{4EDA67EE-A410-4D9F-A24C-A8235C53DF31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plml.LeapMotion", "..\Plml.LeapMotion\Plml.LeapMotion.csproj", "{C538C1BB-26CE-417C-9F15-A4A4087C75D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +23,15 @@ Global
 		{4EDA67EE-A410-4D9F-A24C-A8235C53DF31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EDA67EE-A410-4D9F-A24C-A8235C53DF31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EDA67EE-A410-4D9F-A24C-A8235C53DF31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C538C1BB-26CE-417C-9F15-A4A4087C75D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C538C1BB-26CE-417C-9F15-A4A4087C75D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C538C1BB-26CE-417C-9F15-A4A4087C75D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C538C1BB-26CE-417C-9F15-A4A4087C75D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {47D48B84-9FD8-4E70-A8FD-365C6D66F00A}
 	EndGlobalSection
 EndGlobal

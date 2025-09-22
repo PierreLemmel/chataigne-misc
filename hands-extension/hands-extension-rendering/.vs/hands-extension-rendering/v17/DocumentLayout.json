@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\hands-extension-rendering\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF03E84A-81E5-4D06-80AC-5FEEA4B9315A}|HandsExtensionRendering.csproj|c:\\data\\repositories\\chataigne-misc\\hands-extension\\hands-extension-rendering\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF03E84A-81E5-4D06-80AC-5FEEA4B9315A}|HandsExtensionRendering.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4EDA67EE-A410-4D9F-A24C-A8235C53DF31}|..\\Plml.OSCQuery\\Plml.OSCQuery.csproj|c:\\data\\repositories\\chataigne-misc\\hands-extension\\plml.oscquery\\oscquerywsmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -14,9 +10,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{4EDA67EE-A410-4D9F-A24C-A8235C53DF31}|..\\Plml.OSCQuery\\Plml.OSCQuery.csproj|c:\\data\\repositories\\chataigne-misc\\hands-extension\\plml.oscquery\\oscquerynode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EDA67EE-A410-4D9F-A24C-A8235C53DF31}|..\\Plml.OSCQuery\\Plml.OSCQuery.csproj|c:\\data\\repositories\\chataigne-misc\\hands-extension\\plml.oscquery\\oscquerycolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,72 +19,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "OSCQueryWSMessage.cs",
               "DocumentMoniker": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\OSCQueryWSMessage.cs",
               "RelativeDocumentMoniker": "..\\Plml.OSCQuery\\OSCQueryWSMessage.cs",
               "ToolTip": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\OSCQueryWSMessage.cs",
               "RelativeToolTip": "..\\Plml.OSCQuery\\OSCQueryWSMessage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T23:21:23.702Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OSCQueryColor.cs",
-              "DocumentMoniker": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\OSCQueryColor.cs",
-              "RelativeDocumentMoniker": "..\\Plml.OSCQuery\\OSCQueryColor.cs",
-              "ToolTip": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\OSCQueryColor.cs",
-              "RelativeToolTip": "..\\Plml.OSCQuery\\OSCQueryColor.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAqwBkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T21:25:03.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OSCQueryNode.cs",
-              "DocumentMoniker": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\OSCQueryNode.cs",
-              "RelativeDocumentMoniker": "..\\Plml.OSCQuery\\OSCQueryNode.cs",
-              "ToolTip": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\OSCQueryNode.cs",
-              "RelativeToolTip": "..\\Plml.OSCQuery\\OSCQueryNode.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAowF4AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T15:52:38.309Z",
+              "WhenOpened": "2025-09-05T22:43:21.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "OSCQueryNode.cs",
+              "DocumentMoniker": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\OSCQueryNode.cs",
+              "RelativeDocumentMoniker": "..\\Plml.OSCQuery\\OSCQueryNode.cs",
+              "ToolTip": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\OSCQueryNode.cs",
+              "RelativeToolTip": "..\\Plml.OSCQuery\\OSCQueryNode.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAQwKAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T21:35:54.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "OSCQueryServer.cs",
               "DocumentMoniker": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\OSCQueryServer.cs",
               "RelativeDocumentMoniker": "..\\Plml.OSCQuery\\OSCQueryServer.cs",
               "ToolTip": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\Plml.OSCQuery\\OSCQueryServer.cs",
               "RelativeToolTip": "..\\Plml.OSCQuery\\OSCQueryServer.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAEwG0AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAB8CAAAAAAAAAAAAADICAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T15:02:56.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\hands-extension-rendering\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Data\\Repositories\\chataigne-misc\\hands-extension\\hands-extension-rendering\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAQwD8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T08:58:14.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T20:51:20.501Z"
             }
           ]
         }
